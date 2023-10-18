@@ -1,0 +1,136 @@
+body{
+   background-color:  #F9F4ED;
+
+ 
+
+}
+#id-bord{
+    border-style: solid;
+    width: 70px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 500px;
+    font-style: oblique;
+    
+}
+.hr-bold{
+    border-top: 10px solid #c66;
+    border-radius: 10px;
+    width: 500px;
+}
+img{
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 300px; 
+}
+
+#div2{
+    background-color: darksalmon;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
+}
+
+#para1{
+    text-align: center;
+    color: black;
+    text-transform: none;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 25px;
+    font-size: larger;
+    letter-spacing: 2px;
+    
+}
+
+#main-heading{
+    text-align: center; 
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+section > h2{
+    color: gray;
+    margin-left: 500px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+p{
+    text-transform: capitalize;
+    color: silver;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.list-2 > li{
+    list-style-type: none;
+    margin-left: 475px;
+    width: 600px;
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+    
+}
+
+.list-2 > hr{
+   
+    margin-left: 400px;
+    width: 615px;
+}
+
+.list-2 a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+section hr{
+    margin-left: 440px;
+    width: 615px;
+}
+
+footer{
+   line-height: 50px;
+    margin-left: 500px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.list-3 a{
+    text-decoration: none;
+    color: rgb(29, 28, 28);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.list-3 > hr{
+   
+    margin-left: 400px;
+    width: 615px;
+}
+
+.list-3 > li{
+    list-style-type: none;
+    margin-left: 475px;
+    width: 600px;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
