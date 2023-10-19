@@ -1,0 +1,95 @@
+#Navbar{
+    display: flex;
+    background-color: #011a37;
+    justify-content: center;
+    color: white;
+    height: 70px;
+    align-items: center;   
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family:lato, sans-serif;  
+}
+
+#Navbar>h1 {
+    font-weight: normal;
+    margin-right: 700px;
+    font-family:lato, sans-serif;
+    letter-spacing: 3px;
+}
+
+#Navbar ul > li{
+    
+    display: inline;
+    margin-right: 40px;
+    letter-spacing: 1px;
+
+}
+
+#Main{
+    background-color:#047ade ;
+    display: flex;
+    height: 400px;
+    padding-top: 120px;
+    font-family:lato, sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.5px;
+    
+}
+
+#Left-content{
+    
+    width: 450px;
+    padding-left: 90px;
+    line-height: 25px; 
+    font-weight: lighter; 
+}
+
+
+#Left-content h1{
+    margin-top: -25px;
+    font-weight: lighter ;
+    font-size: 45px;
+    letter-spacing: 0px;
+}
+
+
+#Right-content ul {
+    list-style-type: none; 
+    margin-left: -35px;
+    line-height: 23px;
+    margin-top: -18px;
+    font-weight: lighter;
+    
+    
+}
+
+#Right-content{
+
+    margin-left: 50px;
+    border: 1px solid white ;
+    height: 150px;
+    width: 515px;
+    padding: 0px 25px;
+    color: rgb(58, 57, 57);
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px rgb(56, 55, 55);
+    
+    
+}
+
+#Right-content> h2{
+    font-weight: lighter;
+    
+}
+
+
+#Left-content a{
+    
+    border: 1px solid white;
+    padding: 12px 30px;
+    border-radius: 5px ;
+}
