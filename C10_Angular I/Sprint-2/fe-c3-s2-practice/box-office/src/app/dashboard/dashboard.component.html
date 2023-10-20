@@ -1,0 +1,27 @@
+<div class="container text-center text-white">
+    <h3>{{title}}</h3>
+</div>
+
+<div class="container text-center">
+    <input type="text" placeholder="search by movie" [(ngModel)]="searching">
+    <button (click)="search()" type="button">Go</button>
+    <button (click)="reset()" type="button">Clear</button>
+</div>
+
+
+<div class="container">
+    <div class="row ">
+        <div class="card col-sm-3 m-5 bg-black " *ngFor=" let i of movies">
+            <img class="rounded" src="../../assets/{{i.movieTitle}}.jpg" alt="{{i.movieTitle}}">
+            <div class="text-white pt-3">
+                
+                <h4><img src="../../assets/rating.jpg" alt="star" style="height:15px ; width:15px"> {{i.rating}}</h4>
+                <span>{{i.movieTitle}}</span>
+                <span>{{i.genre}}</span>
+                <span>{{i.yearOfRelease}}</span>
+
+            </div>
+
+        </div>
+    </div>
+</div>
