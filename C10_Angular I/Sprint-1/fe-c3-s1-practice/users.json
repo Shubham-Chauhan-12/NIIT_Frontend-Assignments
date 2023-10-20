@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "username",
+      "pass": "pass",
+      "contact": "contact",
+      "emailid": "emailid",
+      "address": "address"
+    },
+    {
+      "id": 2,
+      "username": "usernamwwe",
+      "pass": "pwwdass",
+      "contact": "contacwdwdt",
+      "emailid": "emailwddid",
+      "address": "addrdddess"
+    },
+    {
+      "username": "",
+      "password": "",
+      "contact": "",
+      "email": "",
+      "address": "",
+      "id": 3
+    },
+    {
+      "username": "",
+      "password": "",
+      "contact": "",
+      "email": "",
+      "address": "",
+      "id": 4
+    },
+    {
+      "username": "Shubham",
+      "password": "12345678",
+      "contact": "0000000000",
+      "email": "shubham@gmail.com",
+      "address": "addres gzb",
+      "id": 5
+    },
+    {
+      "username": "Vaibhav",
+      "password": "pb@123",
+      "contact": "1234567890",
+      "email": "vaibhav@email.com",
+      "address": "delhi ncr India",
+      "id": 6
+    }
+  ]
+}
