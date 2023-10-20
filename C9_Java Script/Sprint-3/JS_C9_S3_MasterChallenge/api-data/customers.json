@@ -1,0 +1,70 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "David",
+      "email": "david@gmail.com",
+      "phoneNumber": "+11527896543",
+      "address": {
+        "streetName": "Court Street",
+        "streetNo": "123",
+        "postalCode": "2617"
+      }
+    },
+    {
+      "id": 2,
+      "name": "james",
+      "email": "james-Updated@gmail.com",
+      "phoneNumber": "+114589449876",
+      "address": {
+        "streetName": "Kierland",
+        "streetNo": "1400",
+        "postalCode": "7885254"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Jennifer",
+      "email": "Jennifer@yahoo.com",
+      "phoneNumber": "+11525432178",
+      "address": {
+        "streetName": "Beachwalk",
+        "streetNo": "902",
+        "postalCode": "96815"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Jessica",
+      "email": "Jessica@live.com",
+      "phoneNumber": "+11523456732",
+      "address": {
+        "streetName": "Bellevue Square",
+        "streetNo": "378",
+        "postalCode": "98004"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Paul",
+      "email": "Paul@gmail.com",
+      "phoneNumber": "+11526789543",
+      "address": {
+        "streetName": "Buena Vista Drive",
+        "streetNo": "A-498",
+        "postalCode": "32830"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Tony",
+      "email": "Tony@gmail.com",
+      "phoneNumber": "+11000496543",
+      "address": {
+        "streetName": "Times-Square",
+        "streetNo": "63",
+        "postalCode": "3817"
+      }
+    }
+  ]
+}

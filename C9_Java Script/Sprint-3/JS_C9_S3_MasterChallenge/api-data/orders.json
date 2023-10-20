@@ -1,0 +1,128 @@
+{
+  "orders": [
+    {
+      "id": 601,
+      "orderDate": "06-22-2022",
+      "items": [
+        {
+          "itemName": "Berry Blast",
+          "price": 1.72
+        },
+        {
+          "itemName": "Emilgrana & Mushroom Dip",
+          "price": 41.4
+        }
+      ],
+      "customer": {
+        "name": "Mary",
+        "email": "mary@gmail.com",
+        "phoneNumber": "+11524449876",
+        "address": {
+          "streetName": "Scottsdale Kierland",
+          "streetNo": "100",
+          "postalCode": "85254"
+        }
+      }
+    },
+    {
+      "id": 602,
+      "orderDate": "06-24-2022",
+      "items": [
+        {
+          "itemName": "Potato Wedges",
+          "price": 42.99
+        },
+        {
+          "itemName": "Cheese Burst Pizza",
+          "price": 50
+        },
+        {
+          "itemName": "Oreo Monster Shake",
+          "price": 3.78
+        }
+      ],
+      "customer": {
+        "name": "Paul",
+        "email": "Paul@gmail.com",
+        "phoneNumber": "+11526789543",
+        "address": {
+          "streetName": "Buena Vista Drive",
+          "streetNo": "A-498",
+          "postalCode": "32830"
+        }
+      }
+    },
+    {
+      "id": 603,
+      "orderDate": "7-15-2022",
+      "items": [
+        {
+          "itemName": "Cheese-Burst",
+          "price": 63
+        }
+      ],
+      "customer": {
+        "name": "Jennifer",
+        "email": "Jennifer@yahoo.com",
+        "phoneNumber": "+11525432178",
+        "address": {
+          "streetName": "Beachwalk",
+          "streetNo": "902",
+          "postalCode": "96815"
+        }
+      }
+    },
+    {
+      "id": 604,
+      "orderDate": "06-27-2022",
+      "items": [
+        {
+          "itemName": "Berry Blast",
+          "price": 1.72
+        },
+        {
+          "itemName": "Garlic Bread Mozzarella",
+          "price": 45.99
+        },
+        {
+          "itemName": "Risotto Con Funghi Veg",
+          "price": 75
+        }
+      ],
+      "customer": {
+        "name": "Mary",
+        "email": "mary@gmail.com",
+        "phoneNumber": "+11524449876",
+        "address": {
+          "streetName": "Scottsdale Kierland",
+          "streetNo": "100",
+          "postalCode": "85254"
+        }
+      }
+    },
+    {
+      "id": 608,
+      "orderDate": "10-22-2022",
+      "items": [
+        {
+          "itemName": "Berry",
+          "price": 2.72
+        },
+        {
+          "itemName": "Mushroom Dip",
+          "price": 51.4
+        }
+      ],
+      "customer": {
+        "name": "Mary-James",
+        "email": "mary-james@gmail.com",
+        "phoneNumber": "+11333549876",
+        "address": {
+          "streetName": "Scottsdale-wonderland",
+          "streetNo": "590",
+          "postalCode": "96454"
+        }
+      }
+    }
+  ]
+}

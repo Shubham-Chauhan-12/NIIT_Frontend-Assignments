@@ -1,0 +1,8 @@
+HTTP Request,For All Movies,For Movie By Id,For Movie By Title,For Movie By Genre,For Movie By Genre and Year of Release,For Movie with Invalid Id,,
+URL,http://localhost:3000/movies,http://localhost:3000/movies/502,http://localhost:3000/movies?movieTitle=365 Days,http://localhost:3000/movies?genre=Action,http://localhost:3000/movies?genre=Action&yearOfRelease=2022,,,
+METHOD,GET,GET,GET,GET,GET,GET,,
+,,,,,,,,
+HTTP Response,success,success,success,success,success,error,,
+Status Code,200,200,200,200,200,404,,
+Status Message,ok,ok,ok,ok,ok,not found,,
+Body,,,,,,,,
