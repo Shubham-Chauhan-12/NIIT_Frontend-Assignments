@@ -1,0 +1,12 @@
+#card{  
+    float: left;
+}
+
+#displaycard{
+    width: 250px;
+    background-color: whitesmoke;
+    margin: 25px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 5px;
+}

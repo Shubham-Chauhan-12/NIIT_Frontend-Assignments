@@ -1,0 +1,9 @@
+<app-contact-card *ngFor = "let i of list" [list1]="i" (sidelist)="list2=$event"></app-contact-card>
+
+
+<aside>
+   <h3>{{list2.firstName}}
+    {{list2.lastName}}</h3> 
+    <p>{{list2.email}}</p>
+    <p>{{list2.contactNo}}</p>
+</aside>
