@@ -1,0 +1,15 @@
+<div class="container text-center">
+    <input type="text" placeholder="Notes-Search" [(ngModel)]="search">
+    <button (click)="find()" type="button">search</button>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="card col-lg-2 m-3 shadow-lg p-3 mb-5 bg-white rounded" *ngFor="let i of findNotes">
+            <p class="card-content text-center fw-bold">{{i.noteTitle}}</p>
+            <p class="text-center">{{i.content}}</p>
+
+        </div>
+    </div>
+</div>
