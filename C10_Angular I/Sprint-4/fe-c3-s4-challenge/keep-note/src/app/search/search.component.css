@@ -1,0 +1,14 @@
+.search-box{
+    border: 2px solid skyblue;
+    background-color: rgb(43, 171, 226);
+    /* margin-left: 600px;
+    margin-top: 30px; */
+    margin: auto;
+    margin-top: 5%;
+    width: 240px;
+    padding: 4px 15px 4px 15px;
+    border-radius: 4px;
+}
+button{
+    margin-left: 4px;
+}

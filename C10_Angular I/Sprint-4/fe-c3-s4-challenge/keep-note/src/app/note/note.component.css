@@ -1,0 +1,17 @@
+#card{
+   
+    float: left;
+
+}
+
+#card-content{
+
+    border: 1px solid black;
+    background-color: antiquewhite;
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+    margin: 50px;
+    border-radius: 5px;
+}
