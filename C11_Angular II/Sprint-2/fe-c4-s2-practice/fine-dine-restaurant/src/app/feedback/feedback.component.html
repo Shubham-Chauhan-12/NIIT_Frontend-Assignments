@@ -1,0 +1,96 @@
+<mat-toolbar color="accent">
+    <span>Restaurant Feedback Form</span>
+</mat-toolbar>
+
+<h2>We appreciate your Feedback !</h2>
+
+<div id="main">
+    
+
+    <form (ngSubmit)="onSubmit(feedbackForm)" #feedbackForm="ngForm">
+        <mat-form-field>
+            <input type="text" matInput name="firstName" #firstName="ngModel" placeholder="FirstName"
+                [(ngModel)]="feedback.firstName" required minlength="3">
+            <div *ngIf="firstName?.invalid && (firstName?.dirty || firstName?.touched)">
+                <div *ngIf="firstName?.errors?.['required']">
+                    First name is required
+                </div>
+                <div *ngIf="firstName?.errors?.['minlength']">
+                    First Name Minimum Length is 3
+                </div>
+            </div>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input type="text" matInput name="lastName" #lastName="ngModel" placeholder="LastName"
+                [(ngModel)]="feedback.lastName" required minlength="3">
+            <div *ngIf="lastName?.invalid && (lastName?.dirty || lastName?.touched)">
+                <div *ngIf="lastName?.errors?.['required']">
+                    First name is required
+                </div>
+                <div *ngIf="lastName?.errors?.['minlength']">
+                    First Name Minimum Length is 3
+                </div>
+            </div>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input type="tel" #phone="ngModel" matInput name="phone" placeholder="Phone-Number"
+                [(ngModel)]="feedback.phone" pattern="^(7|8|9)\d{9}$" required>
+            <div *ngIf="phone?.invalid && (phone?.dirty || phone?.touched)">
+                <div *ngIf="phone?.errors?.['required']">
+                    Phone Number is required
+                </div>
+                <div *ngIf="phone?.errors?.['pattern']">
+                    Number should be start from 7, 8 or 9 and of 10 digits
+                </div>
+            </div>
+
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input type="text" matInput name="email" #email="ngModel" placeholder="Email" [(ngModel)]="feedback.email"
+                pattern="[a-z0-9.]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <div *ngIf="email?.invalid && (email?.dirty || email?.touched)">
+                <div *ngIf="email?.errors?.['required']">
+                    E-mail is required
+                </div>
+                <div *ngIf="email?.errors?.['pattern']">
+                    Invalid Email !
+                </div>
+            </div>
+        </mat-form-field>
+        <br>
+
+        <mat-form-field>
+            <mat-label>
+                Location You Visited
+            </mat-label>
+            <mat-select id="location" name="location" [(ngModel)]="feedback.location " required>
+                <mat-option *ngFor="let location of locations" [value]="location">
+                    {{location}}
+                </mat-option>
+
+            </mat-select>
+        </mat-form-field>
+        <br>
+        <mat-radio-group aria-label="Overall Rating" name="rating" [(ngModel)]="feedback.rating" required>
+            <mat-label id="overall">Overall Rating</mat-label>
+            <mat-radio-button value="1">Excellent</mat-radio-button>
+            <mat-radio-button value="2">Good</mat-radio-button>
+            <mat-radio-button value="3">Average</mat-radio-button>
+            <mat-radio-button value="4">Dissatisfied</mat-radio-button>
+        </mat-radio-group>
+        <br>
+        <br>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Any Comments,questions or suggestions?</mat-label>
+            <textarea matInput placeholder="It makes me feel..." name="comment" [(ngModel)]="feedback.comments"
+                required></textarea>
+        </mat-form-field>
+        <br>
+
+        <button mat-raised-button color="accent" type="submit" [disabled]="feedbackForm.invalid" id="Button">Submit</button>
+        <button mat-raised-button type="reset">reset</button>
+    </form>
+</div>

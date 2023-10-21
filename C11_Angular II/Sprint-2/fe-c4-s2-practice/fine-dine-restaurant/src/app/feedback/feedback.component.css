@@ -1,0 +1,33 @@
+#main{
+  width: 600px;
+  padding: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.216);
+  margin: 10px 500px;
+  background-color: rgb(236, 244, 243);
+  box-shadow: 5px  gray;
+}
+
+h2{
+
+  color: rgb(255, 41, 112);
+  margin: 50px 500px 0px 500px;
+}
+
+mat-form-field{
+  width: 600px;
+  color: black;
+}
+
+#overall{
+  margin-right: 50px;
+}
+
+
+#Button{
+  margin-right: 30px;
+  background-color: pink;
+}
+
+mat-radio-button{
+  padding-right: 10px;
+}

@@ -1,0 +1,78 @@
+<!-- <div id="ca">
+
+  <div *ngFor="let note of notes">
+    <mat-card class="card">
+      <mat-card-title>
+        <span>
+          <h2>{{ note.title }}</h2>
+
+          <ng-container [ngSwitch]="note.priority">
+            <ng-container *ngSwitchCase="'Critical'">
+              <mat-icon  color="warn" aria-hidden="false" aria-label="Example home icon"
+                fontIcon="gpp_maybe"></mat-icon>
+            </ng-container>
+            <ng-container *ngSwitchCase="'High'">
+              <mat-icon color="warn" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_circle_up">
+              </mat-icon>
+            </ng-container>
+            <ng-container *ngSwitchCase="'Low'">
+              <mat-icon color="primary" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_circle_down">
+              </mat-icon>
+            </ng-container>
+            <ng-container *ngSwitchCase="'Medium'">
+              <mat-icon color="primary" aria-hidden="false" aria-label="Example home icon"
+                fontIcon="remove_circle_outline"></mat-icon>
+            </ng-container>
+            <ng-container *ngSwitchDefault>Code Default</ng-container>
+          </ng-container>
+        </span>
+      </mat-card-title>
+      <small> {{note.date}}</small>
+      <mat-card-content>
+
+        <p class="text-center">{{ note.content }}</p>
+      </mat-card-content>
+      <div id="category">
+        {{note.category}}
+      </div>
+    </mat-card>
+  </div>
+</div> -->
+
+
+<div *ngFor="let note of notes" id="main">
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h2>{{ note.title }}</h2>
+      </mat-panel-title>
+      <mat-panel-description>
+        <ng-container [ngSwitch]="note.priority">
+          <ng-container *ngSwitchCase="'Critical'">
+            <mat-icon  color="warn" aria-hidden="false" aria-label="Example home icon"
+              fontIcon="gpp_maybe"></mat-icon>
+          </ng-container>
+          <ng-container *ngSwitchCase="'High'">
+            <mat-icon color="warn" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_circle_up">
+            </mat-icon>
+          </ng-container>
+          <ng-container *ngSwitchCase="'Low'">
+            <mat-icon color="primary" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_circle_down">
+            </mat-icon>
+          </ng-container>
+          <ng-container *ngSwitchCase="'Medium'">
+            <mat-icon color="primary" aria-hidden="false" aria-label="Example home icon"
+              fontIcon="remove_circle_outline"></mat-icon>
+          </ng-container>
+          <ng-container *ngSwitchDefault>Code Default</ng-container>
+        </ng-container>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>{{note.reminderDate}}</p>
+    <p>{{ note.content }}</p>
+    <p>{{note.category}}</p>
+  </mat-expansion-panel>
+</div>
+
+
+
