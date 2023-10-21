@@ -1,0 +1,63 @@
+<!-- <div id="card">
+    <div id="card-content">
+        <h4>{{note1?.title}}</h4>
+        <p>{{note1?.content}}</p>
+     </div>
+</div> -->
+
+<!-- <div>
+<mat-card>
+    <mat-accordion hideToggle>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+
+                <mat-panel-title>
+                {{ note1?.title }}
+                </mat-panel-title> 
+               
+                  <mat-panel-description>
+                    <p>{{ note1?.content }}</p>  
+                  </mat-panel-description>
+                               
+
+            </mat-expansion-panel-header>
+            
+            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                <mat-icon style="color:rgb(40, 40, 160) ;">bookmarks</mat-icon>
+            </button>
+            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                <mat-icon style="color:rgb(40, 40, 160) ;">edit</mat-icon>
+            </button>
+            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                <mat-icon style="color:rgb(40, 40, 160) ;">delete</mat-icon>
+            </button>
+            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                <mat-icon style="color: rgb(235, 30, 98);">notifications</mat-icon>
+            </button>
+        </mat-expansion-panel>
+    </mat-accordion>
+</mat-card> -->
+<div>
+<mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header style="width: 400px;margin: 15px;">
+      <mat-panel-title>
+       <h4>{{ note1?.title }}</h4> 
+      </mat-panel-title>
+      <mat-panel-description>
+        {{ note1?.content }}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+        <mat-icon style="color:rgb(40, 40, 160) ;">bookmarks</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+        <mat-icon style="color:rgb(40, 40, 160) ;">edit</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+        <mat-icon style="color:rgb(40, 40, 160) ;">delete</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+        <mat-icon style="color: rgb(235, 30, 98);">notifications</mat-icon>
+    </button>
+  </mat-expansion-panel>
+</div>
