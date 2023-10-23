@@ -1,0 +1,46 @@
+form {
+    margin-left: 30px;
+}
+
+.formField {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+#event {
+    width: 500px;
+}
+
+#event textarea {
+    height: 150px;
+}
+
+#title {
+    width: 700px;
+}
+
+#guest {
+    position: absolute;
+    width: 400px;
+}
+
+.inputTime {
+    color: whitesmoke;
+}
+
+button {
+    margin-left: 25px;
+    padding: 10px 15px;
+
+    /* color: whitesmoke; */
+
+}
+
+mat-error{
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: small;
+}

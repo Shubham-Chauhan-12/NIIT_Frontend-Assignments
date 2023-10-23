@@ -1,0 +1,82 @@
+<div>
+    <div>
+        <mat-toolbar color="primary">
+            <h3>View Tube-Live Stream Event Form</h3>
+        </mat-toolbar>
+    </div>
+
+    <div style="color: white ;">
+        <form action="#" [formGroup]="liveStream" (ngSubmit)="onSubmit()">
+            <mat-form-field id="title" class="formField" appearance="fill">
+                <input class="inp" matInput placeholder="Add Title" name="eventTitle" id="eventTitle"
+                    formControlName="eventTitle" type="text">
+                <mat-error *ngIf="eventTitle?.errors?.['required']">
+                    Event Title is required.
+                </mat-error>
+            </mat-form-field>
+
+            <br>
+
+            <mat-form-field class="formField" appearance="fill">
+                <mat-label>from Date</mat-label>
+                <input class="inputTime" matInput [min]="minDate1" required [matDatepicker]="picker"
+                    formControlName="fromDate">
+                <mat-error *ngIf="fromDate?.errors?.['required']">
+                    Event scheduled From Date is required.
+                </mat-error>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field class="formField" appearance="fill">
+                <mat-label>from Time</mat-label>
+                <input class="inputTime" type="time" matInput [min]="forTime" formControlName="fromTime">
+                <mat-error *ngIf="fromTime?.errors?.['required']">
+                    Event scheduled From Time is required.
+                </mat-error>
+
+            </mat-form-field>
+
+            <mat-form-field class="formField" appearance="fill">
+                <mat-label>To Time</mat-label>
+                <input class="inputTime" type="time" matInput [max]="forTime" formControlName="toTime">
+                <mat-error *ngIf="toTime?.errors?.['required']">
+                    Event scheduled To Time is required.
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="formField" appearance="fill">
+                <mat-label>To Date</mat-label>
+                <input class="inputTime" matInput [min]="minDate2" required [matDatepicker]="picker2"
+                    formControlName="toDate">
+                <mat-error *ngIf="toDate?.errors?.['required']">
+                    Event scheduled To Date is required.
+                </mat-error>
+                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                <mat-datepicker #picker2></mat-datepicker>
+            </mat-form-field>
+
+            <br>
+
+            <mat-form-field class="formField" id="event" appearance="fill">
+                <mat-label>Add Event Details</mat-label>
+                <textarea class="inputTime" matInput formControlName="description"></textarea>
+            </mat-form-field>
+
+            <mat-form-field id="guest" class="formField" appearance="fill">
+                <mat-label>Guests</mat-label>
+                <textarea class="inputTime" matInput formControlName="guests"></textarea>
+                <mat-error *ngIf="guests?.errors?.['required']">
+                    Guest Email is required.
+                </mat-error>
+                <mat-error *ngIf="guests?.errors?.['checkIfGuestEmailsAreValid']===false">
+                    One of the guests in the list has an invalid email id.
+                </mat-error>
+            </mat-form-field>
+
+            <br>
+
+            <button color="warn" type="submit" [disabled]="!liveStream.valid">Save</button>
+        </form>
+    </div>
+</div>

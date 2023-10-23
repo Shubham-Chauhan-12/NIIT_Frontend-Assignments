@@ -1,0 +1,12 @@
+<div id="notePlus">
+    <button mat-icon-button mat-raised-button> 
+        <mat-icon fontIcon="add" color="primary" (click)="toggle()"></mat-icon>
+    </button>
+</div>
+<div>
+    <ng-template [ngIf]="flag">
+        <app-add-note ></app-add-note>
+    </ng-template>
+</div>
+<app-search (searchs)="search($event)"></app-search>
+<app-note [notes] = "notes"></app-note>
